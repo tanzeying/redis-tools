@@ -26,37 +26,6 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
-    <!--以下jar包为手动安装到maven仓库，如果需要可自行网络下载或联系qq286966505-->
-    <dependency>
-      <groupId>com.Jim2mov</groupId>
-      <artifactId>Jim2mov</artifactId>
-      <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.customizer</groupId>
-      <artifactId>customizer</artifactId>
-      <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.jmf</groupId>
-      <artifactId>jmf</artifactId>
-      <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.mediaplayer</groupId>
-      <artifactId>mediaplayer</artifactId>
-      <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.multiplayer</groupId>
-      <artifactId>multiplayer</artifactId>
-      <version>1.0</version>
-    </dependency>
-    <dependency>
-      <groupId>com.sound</groupId>
-      <artifactId>sound</artifactId>
-      <version>1.0</version>
-    </dependency>
   </dependencies>
 
   <build>
