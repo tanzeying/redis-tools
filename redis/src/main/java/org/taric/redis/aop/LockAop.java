@@ -1,9 +1,9 @@
-package org.taric.redis.aspect;
+package org.taric.redis.aop;
 
-import com.zengtengpeng.annotation.Lock;
-import com.zengtengpeng.enums.LockModel;
-import com.zengtengpeng.excepiton.LockException;
-import com.zengtengpeng.properties.RedissonProperties;
+import org.taric.redis.annotation.Lock;
+import org.taric.redis.enums.LockModel;
+import org.taric.redis.excepiton.LockException;
+import org.taric.redis.properties.RedissonProperties;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
@@ -34,7 +34,8 @@ import java.util.concurrent.TimeUnit;
  * 分布式锁aop
  */
 @Aspect
-public class ReidsLockAspect {
+@Order(-10)
+public class LockAop {
     private Logger log = LoggerFactory.getLogger(getClass());
 
     @Autowired

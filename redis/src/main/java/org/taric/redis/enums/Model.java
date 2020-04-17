@@ -1,4 +1,4 @@
-package org.taric.redis;
+package org.taric.redis.enums;
 
 public enum Model {
     //哨兵

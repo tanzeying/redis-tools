@@ -1,13 +1,15 @@
-package org.taric.redis.config;
+package org.taric.redis.properties;
 
 
+import org.taric.redis.enums.LockModel;
+import org.taric.redis.enums.Model;
 import org.redisson.config.SslProvider;
 import org.redisson.config.TransportMode;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.context.properties.NestedConfigurationProperty;
-import org.taric.redis.Model;
 
 import java.net.URI;
+import java.net.URL;
 
 @ConfigurationProperties(prefix = "redisson")
 public class RedissonProperties {
@@ -30,9 +32,9 @@ public class RedissonProperties {
     private String clientName;
     private Boolean sslEnableEndpointIdentification = true;
     private SslProvider sslProvider= SslProvider.JDK;
-    private URI sslTruststore;
+    private URL sslTruststore;
     private String sslTruststorePassword;
-    private URI sslKeystore;
+    private URL sslKeystore;
     private String sslKeystorePassword;
     private Integer pingConnectionInterval=0;
     private Boolean keepAlive=false;
@@ -340,11 +342,11 @@ public class RedissonProperties {
         this.sslProvider = sslProvider;
     }
 
-    public URI getSslTruststore() {
+    public URL getSslTruststore() {
         return sslTruststore;
     }
 
-    public void setSslTruststore(URI sslTruststore) {
+    public void setSslTruststore(URL sslTruststore) {
         this.sslTruststore = sslTruststore;
     }
 
@@ -356,11 +358,11 @@ public class RedissonProperties {
         this.sslTruststorePassword = sslTruststorePassword;
     }
 
-    public URI getSslKeystore() {
+    public URL getSslKeystore() {
         return sslKeystore;
     }
 
-    public void setSslKeystore(URI sslKeystore) {
+    public void setSslKeystore(URL sslKeystore) {
         this.sslKeystore = sslKeystore;
     }
 

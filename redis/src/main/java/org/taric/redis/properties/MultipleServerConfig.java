@@ -1,4 +1,4 @@
-package org.taric.redis.config;
+package org.taric.redis.properties;
 
 import org.redisson.config.ReadMode;
 import org.redisson.config.SubscriptionMode;
